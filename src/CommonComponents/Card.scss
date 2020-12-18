@@ -1,0 +1,29 @@
+.Card{    
+        width: 200px;
+        margin: 10px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        .CardName{
+            border-radius: 5px;
+            padding: 45px;
+        }
+        
+}
+// .Card::before{
+//     content: 'HELLo';
+//     position: absolute;
+//     background-color: 'red';
+//     border-radius: 50%;
+//     left: calc(100% * var(--ripple-x));
+//     padding: 50%;
+//     top: calc(100% * var(--ripple-y));
+//     transform: translate(-50%, -50%) scale(1);
+//     opacity: 0;
+//     transition: transform 1s, opacity 1s;
+// }
+// .Card:active::before{
+//     transition: 0s;
+//     opacity: 1;
+//     transform: translate(-50%, -50%) scale(0);
+// }

@@ -1,0 +1,25 @@
+.Search{
+    .SearchBox{
+        margin: 10px;
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid slategray;
+        outline: none;
+        width: 25%;
+        position: relative;
+        // transition: border-bottom 0.3s;  
+        
+    }
+    .SearchBox::placeholder{
+        color: slategray;
+    }
+    .SearchBox:active, .SearchBox:focus{
+        border-bottom: 2px solid slategray;
+        padding-bottom: 4px;
+    }
+    @media screen and (max-width: 435px) {
+        .SearchBox {
+           width: 40%;
+        }
+      }
+}
