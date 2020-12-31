@@ -1,0 +1,5 @@
+Git fatal error 
+first pull 
+then fetch 
+then switch 
+then pull
