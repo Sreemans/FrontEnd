@@ -85,3 +85,44 @@ export default function FileData(props) {
     </table>
         <button onClick={excelOp}></button></>)
 }
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+try {
+        fetch(fileUrl).then(res => {
+          return new Promise((resolve, reject) => {
+            try {
+              getFile(workflowOid, res.zipFileName)
+                .then(response => response.blob())
+                .then((blob) => {
+                  let fileName = `${targetClientId}_WFNPT_All_Balancing_${getDate()}`
+                  if (blob) {
+                    // TODO: test in MS. MS Edge and IE don't allow using a blob object directly as link href, instead it is necessary to use msSaveOrOpenBlob
+                    if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+                      window.navigator.msSaveOrOpenBlob(blob);
+                    }
+                    else {
+                      // For other browsers: create a link pointing to the ObjectURL containing the blob.
+                      const objUrl = window.URL.createObjectURL(blob);
+                      const link = document.createElement('a');
+                      link.href = objUrl;
+                      link.download = fileName + '.zip';
+                      link.click();
+                      // For Firefox it is necessary to delay revoking the ObjectURL.
+                      setTimeout(() => {
+                        window.URL.revokeObjectURL(objUrl);
+                      }, 250);
+                    }
+                  }
+                  resolve(blob);
+                }).catch(e => console.error(e))
+            } catch (error) {
+              console.log(error, "2")
+            }
+          })
+        });
+      } catch (error) {
+        console.log("File Download Failed", error)
+      }
