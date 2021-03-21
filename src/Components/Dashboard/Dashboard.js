@@ -4,13 +4,14 @@ import Search from '../SearchBox/Search';
 import './Dashboard.scss'
 export default function Dashboard(props) {
 
-    let CardNames = [{ Name: "HTML", Color: "coral" },
+    const CardNames = [{ Name: "HTML", Color: "#d01515" },
     { Name: "Java Script", Color: "bisque" },
     { Name: "Node.js", Color: "lightgreen" },
     { Name: "CSS", Color: "skyblue" },
-    { Name: "React.js", Color: "#cecae1" }
+    { Name: "React.js", Color: "#cecae1" },
+    { Name: "Motivation", Color: "coral" }
     ];
-
+//cssr 230 properties
     return (<div className="Dashboard">
         <Search />
         <div className='Cards'>

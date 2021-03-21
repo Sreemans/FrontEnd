@@ -1,18 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Modules } from '../../Information/Modules';
 import ReactHtmlParser from 'react-html-parser'
 import './Search.scss'
+// var _ = require('lodash');
 
-function createMarkup(){  
-    var htmlString = '<h1 class="test">TESTING</h1>';
-    return {__html : htmlString}
 
-}
+
 export default function Search() {
-    let a = `<h1>Hi</h1>`
+    
+    const [data, setData] = useState([]);
+    
+    const getData = (val) => {
+        if (val) {
+            let keys = Object.keys(Modules);
+            let result = [];
+            keys.map(k => {
+                if (k.includes(val)) {
+                    result.push(k)
+                }
+                return null;
+            });
+            setData(result);
+        }
+    }
+    
+    const dat = data && data;
+
     return (<div className="Search">
-        <input className="SearchBox" type='search' placeholder="Search" onChange={(e) => { console.log(e.target.value) }}></input>
-        <div dangerouslySetInnerHTML={createMarkup()}></div>
-        <div>{ReactHtmlParser(a)}</div>
+        <input className="SearchBox" id="SearchBox" type='search' placeholder="Search" onChange={(e) => { getData(e.target.value.toUpperCase()) }}></input>
+        <div className="results">
+            {dat && dat.map(k => {
+                return (<div key={k} className="resultSnippet">
+                    <div className="description">{ReactHtmlParser(Modules[k].description)}</div>
+                    <div className="code">{(Modules[k].code)}</div>
+                    <div className="moduleLink">Module Link: {ReactHtmlParser(Modules[k].moduleLink)}</div></div>
+                )
+            })}
+        </div>
     </div>
     )
 }

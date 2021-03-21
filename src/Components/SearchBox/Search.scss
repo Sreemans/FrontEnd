@@ -1,11 +1,11 @@
 .Search{
     .SearchBox{
-        margin: 10px;
+        margin: 10px 37%;
         padding: 5px;
         border: none;
         border-bottom: 1px solid slategray;
         outline: none;
-        width: 25%;
+        width: 26%;
         position: relative;
         // transition: border-bottom 0.3s;  
         
@@ -19,7 +19,32 @@
     }
     @media screen and (max-width: 435px) {
         .SearchBox {
+            margin: 10px 30%;
            width: 40%;
         }
-      }
+    }
+    .results{
+    .resultSnippet{
+        margin: auto;
+        box-shadow: inset 1px 0px 10px 0px black;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: max-content;
+    .description{
+        white-space: pre-wrap;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .moduleLink{
+        white-space: pre-wrap;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .code{
+        white-space: pre-wrap;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+}
+    }
 }
