@@ -1,8 +1,19 @@
-.App {
-  // text-align: center;
-  height: 100vh;
+// .App {
+//   // height: 100vh;  
+// }
+body{
+  font-family: monospace,Courier;
 }
 
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}
+li{
+  padding: 8px;
+  cursor: pointer;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
