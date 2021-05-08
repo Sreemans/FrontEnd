@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Card from '../../CommonComponents/Card'
+import Card from '../../CommonComponents/Card/Card'
 import Search from '../SearchBox/Search';
 import { colours } from '../../constants/constants'
 import './Dashboard.scss'
@@ -9,10 +9,10 @@ export default function Dashboard(props) {
     const [errorMessage, setErrorMessage] = useState("");
     const CardNames = [{ Name: "HTML", Color: "#d01515" },
     { Name: "Java Script", Color: "bisque" },
-    { Name: "Node.js", Color: "lightgreen" },
+    { Name: "Git", Color: "lightgreen" },
     { Name: "CSS", Color: "skyblue" },
     { Name: "React.js", Color: "#cecae1" },
-    { Name: "Motivation", Color: "coral" }
+    { Name: "3 out 10", Color: "coral" }
     ];
     //cssr 230 properties
     const setError = errorMessage => { setErrorMessage(errorMessage); setTimeout(() => setErrorMessage(""), 5000); };

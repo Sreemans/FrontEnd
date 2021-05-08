@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     .error{
         position: absolute;
@@ -18,7 +18,7 @@
     }
     main{
         width: 60%;
-        height: 80vh;
+        min-height: 80vh;
         background: linear-gradient(to right bottom,
         rgba(255, 255, 255, 0.6), rgba(255,255,255,0.2));
         border-radius: 1rem;

@@ -14,7 +14,7 @@ export default class Poker extends React.Component {
     }
 
     handleChange(e) {
-        if(e.target.name === "playerscount" && e.target.value > 100){
+        if (e.target.name === "playerscount" && e.target.value > 100) {
             return;
         }
         this.setState({
@@ -28,7 +28,7 @@ export default class Poker extends React.Component {
     }
     startGame() {
         const { amount, playerscount, players } = this.state;
-        
+
         const checkAllPlayersFilled = () => {
             if (Object.keys(players).length != playerscount) {
                 this.setState({ warning: "Fill all the player names" });

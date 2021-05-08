@@ -10,6 +10,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Git from './Components/Git/Git';
+import { ThreeTen } from './Components/ThreeoutTen/ThreeTen';
 
 function App() {
   return (
@@ -22,9 +24,15 @@ function App() {
     <Router>
       <div>
         <Switch>
-         
+
           <Route path="/JavaScript">
             <JavaScript />
+          </Route>
+          <Route path="/3out10">
+            <ThreeTen />
+          </Route>
+          <Route path="/Git">
+            <Git />
           </Route>
           <Route path="/">
             <Dashboard />
