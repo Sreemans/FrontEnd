@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import Card from '../../CommonComponents/Card/Card'
-import Search from '../SearchBox/Search';
-import { colours } from '../../constants/constants'
+// import Search from '../SearchBox/Search';
 import './Dashboard.scss'
 import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa/index";
-import obsidian from '../../images/obsidian.jpeg';
 export default function Dashboard(props) {
     const [errorMessage, setErrorMessage] = useState("");
     const CardNames = [{ Name: "HTML", Color: "#d01515" },
@@ -21,11 +19,11 @@ export default function Dashboard(props) {
         {errorMessage && <div className="error">{errorMessage}</div>}
         <main>
             <div className="user">
-                <img />
+                <img alt='Creator' />
                 <h3>Sreeman Badugu</h3>
-                <span><FaInstagram /> <a href="https://www.instagram.com/sreemans/" target="_blank">SreemanS</a></span>
-                <span><FaTwitter /> <a href="https://twitter.com/Sreeman_S" target="_blank">Sreemans_s</a></span>
-                <span><FaLinkedin /> <a href="https://twitter.com/Sreeman_S" target="_blank">Sreemans_s</a></span>
+                <span><FaInstagram /> <a rel="noopener noreferrer" href="https://www.instagram.com/sreemans/" target="_blank">SreemanS</a></span>
+                <span><FaTwitter /> <a rel="noopener noreferrer" href="https://twitter.com/Sreeman_S" target="_blank">Sreemans_s</a></span>
+                <span><FaLinkedin /> <a rel="noopener noreferrer" href="https://twitter.com/Sreeman_S" target="_blank">Sreemans_s</a></span>
 
             </div>
             <div className='Cards'>

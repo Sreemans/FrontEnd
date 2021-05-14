@@ -1,0 +1,24 @@
+.Git{
+    color: white;
+    .pageHead{
+        display: flex;
+    }
+    h1{
+        text-align: center;
+        width: 85%;
+        margin-top: 0;
+    }
+    .sub{
+        padding: 10px;
+        width: 33%;  
+        border-right: 1px solid;      
+    }
+    .header{
+        display: flex;
+        font-weight: 600;  
+        border-bottom: 2px solid;      
+    }
+    .body{
+        display: flex;
+    }
+}

@@ -1,0 +1,16 @@
+.Card{   
+        text-align: center; 
+        width: 40%;
+        min-width: 200px;
+        margin: 10px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        .CardName{
+            color: white;
+            background: rgba($color: black, $alpha: 0.2);
+            border-radius: 5px;
+            padding: 45px;
+        }
+        
+}

@@ -1,0 +1,22 @@
+.Accordian{
+   button{
+    outline: none;
+    border: none;
+    width: 98%;
+    height: 35px;
+    text-align: left;
+    padding: 10px;
+   }
+   button::after{
+    content: '+';
+    position: absolute;
+    right: 3%;
+    font-size: 23px;
+    top: 15px;
+   }
+   .panel{
+       background: whitesmoke;
+    width: 96%;
+       padding: 10px;
+   }
+}
