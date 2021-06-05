@@ -181,15 +181,3 @@ export const xlsx = {
         }
     ]
 }
-
-export const xBets = [
-    {
-        title: "Any Drawn Number to be Divisible by ",
-        odds: [
-            { Desc: "(3)", Ratio: 1.476 },
-            { Desc: "(3)", Ratio: 1.476 },
-            { Desc: "(3)", Ratio: 1.476 },
-            { Desc: "(3)", Ratio: 1.476 }
-        ]
-    }
-]

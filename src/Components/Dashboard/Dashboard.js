@@ -10,7 +10,7 @@ export default function Dashboard(props) {
     { Name: "Git", Color: "lightgreen" },
     { Name: "CSS", Color: "skyblue" },
     { Name: "React.js", Color: "#cecae1" },
-    { Name: "3 out 10", Color: "coral" }
+    { Name: "DataBase", Color: "coral" }
     ];
     //cssr 230 properties
     const setError = errorMessage => { setErrorMessage(errorMessage); setTimeout(() => setErrorMessage(""), 5000); };

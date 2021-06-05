@@ -17,9 +17,12 @@ export default function Card(props) {
         else if (cardName === "Git") {
             history.push('/Git');
         }
-        else if (cardName === "3 out 10") {
-            history.push('/3out10');
+        else if (cardName === "DataBase") {
+            history.push('/DataBase');
         }
+        else if (cardName === "HTML") {
+            history.push('/HTML');
+        }        
         else {
             props.setError("Under Development");
         }
