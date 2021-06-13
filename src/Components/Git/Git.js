@@ -13,8 +13,8 @@ export default function () {
                     <div className="sub">Git Command</div>
                     <div className="sub">Description 2</div>
                 </div>
-                {xlsx.Git.map(g =>
-                    <div style={{ display: "flex" }}>
+                {xlsx.Git.map((g, i) =>
+                    <div key={`i${i}`} style={{ display: "flex" }}>
                         <div className="sub">{g.Desc1}</div>
                         <div className="sub">{g.Command}</div>
                         <div className="sub">{g.Desc2}</div>
