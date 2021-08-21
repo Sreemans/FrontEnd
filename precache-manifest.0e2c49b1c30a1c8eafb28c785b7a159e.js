@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e8dc60776af9667b9d21ce2f37516343",
+    "revision": "04c931ca04e6aa6dfe4dbb032dcef3be",
     "url": "/FrontEnd/index.html"
   },
   {
-    "revision": "a07b26e4b1fc6e067b02",
-    "url": "/FrontEnd/static/css/main.b066789f.chunk.css"
+    "revision": "2b78fd0b5386684e9eb0",
+    "url": "/FrontEnd/static/css/main.1a44de2c.chunk.css"
   },
   {
     "revision": "831052b2df5c010402b9",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FrontEnd/static/js/2.ecb95e1f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a07b26e4b1fc6e067b02",
-    "url": "/FrontEnd/static/js/main.3e38306b.chunk.js"
+    "revision": "2b78fd0b5386684e9eb0",
+    "url": "/FrontEnd/static/js/main.0fcaa526.chunk.js"
   },
   {
     "revision": "e8506b6cc65bba632be7",
@@ -28,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FrontEnd/static/media/Me.3965e3d0.jpeg"
   },
   {
-    "revision": "39727ec6ec6e5938c252d7b35c897396",
-    "url": "/FrontEnd/static/media/SQLServercommandsandqueries.39727ec6.md"
+    "revision": "56efbac5c5a4ba5c39abeb7e27fe7c15",
+    "url": "/FrontEnd/static/media/SQLServercommandsandqueries.56efbac5.md"
   }
 ]);
