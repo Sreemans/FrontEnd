@@ -19,7 +19,7 @@ function JavaScript() {
                 {set === 'Classes' && classes.map(li => <li key={li}>{li}</li>)}
                 {set === 'Functions' && functions.map(li => <li key={li}>{li}</li>)}
                 {set === 'Identify' && Identify.map(li => <li key={li}>{li}</li>)}
-                {set === 'events' && Object.keys(window).forEach(function (e, i) { if (e.startsWith('on')) { return <li key={e}>{e}</li> } })}
+                {set === 'events' && Object.keys(window).map(function (e, i) { if (e.startsWith('on')) { return <li key={e}>{e}</li> } })}
                 {set === 'css' && getHtml()}
             </ol>
         </div>

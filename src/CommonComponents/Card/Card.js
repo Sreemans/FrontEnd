@@ -22,6 +22,9 @@ export default function Card(props) {
         }
         else if (cardName === "HTML") {
             history.push('/HTML');
+        }
+        else if(cardName === "Flex"){
+            window.open('https://codepen.io/enxaneta/pen/adLPwv', '_blank')
         }        
         else {
             props.setError("Under Development");

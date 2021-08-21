@@ -10,7 +10,8 @@ export default function Dashboard(props) {
     { Name: "Git", Color: "lightgreen" },
     { Name: "CSS", Color: "skyblue" },
     { Name: "React.js", Color: "#cecae1" },
-    { Name: "DataBase", Color: "coral" }
+    { Name: "DataBase", Color: "coral" },
+    { Name: "Flex", Color: "coral" }
     ];
     //cssr 230 properties
     const setError = errorMessage => { setErrorMessage(errorMessage); setTimeout(() => setErrorMessage(""), 5000); };
@@ -19,7 +20,7 @@ export default function Dashboard(props) {
         {errorMessage && <div className="error">{errorMessage}</div>}
         <main>
             <div className="user">
-                <img alt='Creator' />
+                <img  />
                 <h3>Sreeman Badugu</h3>
                 <span><FaInstagram /> <a rel="noopener noreferrer" href="https://www.instagram.com/sreemans/" target="_blank">SreemanS</a></span>
                 <span><FaTwitter /> <a rel="noopener noreferrer" href="https://twitter.com/Sreeman_S" target="_blank">Sreemans_s</a></span>
