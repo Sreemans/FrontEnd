@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { xlsx } from '../../constants/constants'
 require('./Git.scss');
-export default function () {
+function Git() {
     const [backGround, setBackGround] = useState("#4b62a7");
     return (
         <div className="Git" style={{ background: backGround }}>
@@ -23,3 +23,5 @@ export default function () {
         </div>
     )
 }
+
+export default Git;

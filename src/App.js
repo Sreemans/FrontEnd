@@ -10,15 +10,11 @@ import {
 import Git from './Components/Git/Git';
 import Markdown from './Components/markdown/markdown';
 import HTML from './Components/Html/html';
+import Excel from './Components/Excel/Excel';
+import { CRP } from './Components/Crp/crp';
 
 function App() {
   return (
-    // <div className="App">
-    //   <Dashboard />
-    //   {/* <Poker/> */}
-    //   <Board/>
-    // </div>
-
     <Router>
       <div>
         <Switch>
@@ -35,8 +31,12 @@ function App() {
           <Route path="/Git">
             <Git />
           </Route>
+          <Route path='/CRP'>
+            <CRP />
+          </Route>
           <Route path="/">
             <Dashboard />
+            {/* <Excel/> */}
           </Route>
         </Switch>
       </div>
