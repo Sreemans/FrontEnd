@@ -18,9 +18,6 @@ function App() {
             <HTML></HTML>
           </Route>
           <Route path="/DataBase">
-            <a href="https://gist.github.com/ashish2199/8ad29d80f3195ce3166bee55b2624653">
-              Github
-            </a>
             <Markdown></Markdown>
           </Route>
           <Route path="/JavaScript">
@@ -41,4 +38,4 @@ function App() {
     </Router>
   );
 }
-export default App;
+export default (App);
