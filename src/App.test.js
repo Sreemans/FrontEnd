@@ -1,10 +1,9 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+// import React from "react";
+// import { render, screen } from "@testing-library/react";
+import App from "./App";
+import React, { useState } from "react";
+import { render, fireEvent, screen } from "@testing-library/react";
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/HTML/i);
-  expect(linkElement).toBeInTheDocument();
+test("load dashboard", () => {
+  render(<App />);
 });
- 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './Card.scss'
 export default function Card(props) {
@@ -41,7 +41,7 @@ export default function Card(props) {
                 </div>
             </div>
             <br />
-            {false &&
+            {/* {false &&
                 selectedCard === "Motivation" &&
                 <div style={{ whiteSpace: "pre-line" }}>
                     {`          Tomorrow will never happen
@@ -51,7 +51,7 @@ export default function Card(props) {
                         You came to experience in life not to avoid life
                         Control your body, thoughts and emotion , life energies`}
                 </div>
-            }
+            } */}
         </>
     )
 }
