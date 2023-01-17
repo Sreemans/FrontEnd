@@ -31,7 +31,7 @@ function App() {
           </Route>
           <Route path="/">
             <Dashboard />
-            <Excel />
+            {/* <Excel /> */}
           </Route>
         </Switch>
       </div>

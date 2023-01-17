@@ -15,9 +15,9 @@ export const CardNames = [
 ];
 export default function Dashboard(props) {
   const history = useHistory();
-  useEffect(() => {
-    (async () => console.log(await fetch("/api/hello")))();
-  }, []);
+  // useEffect(() => {
+  //   (async () => console.log(await fetch("/api/hello")))();
+  // }, []);
   const [errorMessage, setErrorMessage] = useState("");
 
   //cssr 230 properties
